@@ -61,6 +61,10 @@ main * {
 
 /* ---------------- History ----------------*/
 
+ul {
+    list-style: none;
+}
+
 .old-note {
     border-radius: 10px;
     border-style: solid;
