@@ -92,11 +92,3 @@ ul {
     font-size: 12px;
     font-weight: 600;
 }
-
-/* ---------------- Responsive ----------------*/
-
-@media screen and (max-width: 500px) {
-    /*main * {
-        width: 70vw;
-    }*/
-}
