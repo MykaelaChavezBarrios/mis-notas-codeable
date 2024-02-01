@@ -11,7 +11,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
-    <script src="./index.js"></script>
+
 </head>
 
 <body>
@@ -21,22 +21,15 @@
             <form action="">
                 <textarea name="note" id="note" class="note" cols="30" rows="4"
                     placeholder="Algo para recordar..."></textarea>
-                <button class="new-note-btn" type="submit">Crear</button>
+                <button id="addBtn" class="new-note-btn" type="submit">Crear</button>
             </form>
         </div>
         <div class="note-history">
-            <ul class="note-list">
-                <li class="old-note">
-                    <p>Mi primera Nota</p>
-                    <button class="delete-btn">Borrar</button>
-                </li>
-                <li class="old-note">
-                    <p>Esta es una nota larga que ocupa más de una línea</p>
-                    <button class="delete-btn">Borrar</button>
-                </li>
+            <ul id="noteList" class="note-list">
             </ul>
         </div>
     </main>
+    <script src="./index.js"></script>
 </body>
 
 </html>
