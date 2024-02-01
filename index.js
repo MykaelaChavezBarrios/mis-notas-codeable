@@ -15,20 +15,22 @@ window.addEventListener('load', () => {
 addBtn.addEventListener('click', (e) => {
     e.preventDefault();
 
-    const txtNote = note.value;
+    const txtNote = note.value.trim();
 
-    const li = document.createElement('li');
-    li.classList.add('old-note');
+    if (txtNote !== '') {
+        const li = document.createElement('li');
+        li.classList.add('old-note');
 
-    const p = document.createElement('p');
-    p.textContent = txtNote;
+        const p = document.createElement('p');
+        p.textContent = txtNote;
 
-    li.appendChild(p);
-    li.appendChild(addDelBtn());
-    noteList.appendChild(li);
+        li.appendChild(p);
+        li.appendChild(addDelBtn());
+        noteList.appendChild(li);
 
-    saveNote(txtNote);
-    note.value = "";
+        saveNote(txtNote);
+        note.value = "";
+    }
 });
 
 /* ---------- borrar nota ----------*/
