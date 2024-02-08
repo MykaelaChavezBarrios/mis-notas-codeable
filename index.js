@@ -10,6 +10,7 @@ window.addEventListener('load', () => {
     loadNotes();
 });
 
+
 /* ---------- crear nota ----------*/
 
 addBtn.addEventListener('click', (e) => {
